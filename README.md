@@ -1,50 +1,47 @@
-# Welcome to your Expo app 👋
+<p align="center">
+  <img src="assets/images/logo-cvujs.png" alt="CV UJS" width="100">
+</p>
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+<h1 align="center">CV UJS — Sistem Pengadaan Barang</h1>
 
-## Get started
+Aplikasi mobile untuk mengelola proses **pengadaan barang**: mencatat supplier, membandingkan harga antar supplier, membuat **Purchase Order** (ekspor PDF), dan melihat laporan ringkas. Dibangun dengan **React Native (Expo)**.
 
-1. Install dependencies
+## Fitur
 
-   ```bash
-   npm install
-   ```
+- **Pengadaan** — kelola daftar pengadaan barang beserta detailnya
+- **Supplier** — data supplier dan kontaknya
+- **Perbandingan Harga** — bandingkan harga satu barang dari beberapa supplier
+- **Purchase Order** — buat PO dan ekspor ke PDF (otomatis hitung sub-total, PPN, grand total)
+- **Laporan** — ringkasan total pengadaan & item, grafik barang per jenis dan pengadaan per tahun
 
-2. Start the app
+## Teknologi
 
-   ```bash
-   npx expo start
-   ```
+React Native · Expo · Expo Router · TypeScript · React Native Paper
 
-In the output, you'll find options to open the app in a
+## Tangkapan Layar
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+| Beranda | Menu | Perbandingan Harga |
+|---|---|---|
+| ![Beranda](docs/01-beranda.png) | ![Menu](docs/02-menu.png) | ![Form Perbandingan Harga](docs/03-form-perbandingan-harga.png) |
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+| Purchase Order (PDF) | Laporan |
+|---|---|
+| ![Purchase Order](docs/04-purchase-order.png) | ![Laporan](docs/05-laporan.png) |
 
-## Get a fresh project
-
-When you're ready, run:
+## Menjalankan di lokal
 
 ```bash
-npm run reset-project
+git clone https://github.com/Axcels81/cv-ujs.git
+cd cv-ujs
+npm install
+npx expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Pindai QR code dengan aplikasi **Expo Go** (Android/iOS), atau tekan `a` untuk membuka di emulator Android.
 
-## Learn more
+**Login demo:** username `admin`, password `admin`.
 
-To learn more about developing your project with Expo, look at the following resources:
+> Catatan: aplikasi ini berjalan dengan data contoh (statis) tanpa backend. Identitas pada kop Purchase Order memakai alamat placeholder.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+Dibuat oleh **Ahmad Hadi Sahab** · [Portofolio](https://axcels81.github.io)
